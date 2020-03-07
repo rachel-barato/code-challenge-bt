@@ -1,0 +1,18 @@
+.title {
+  color: #6495ED;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 36px;
+  text-align: center;
+}
+
+.products-container {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+
+  app-product-card {
+    flex-basis: 270px;
+    flex-grow: 0;
+    padding: .5rem;
+  }
+}

@@ -1,0 +1,16 @@
+<div class="info">
+  <p class="title" contentEditable="true">
+    {{ product.name }}
+  </p>
+  <p class="description">
+    {{ product.quantity }} Un • {{ product.description }}
+  </p>
+  <p class="price">
+   {{ product.price | currency:"RD$"}}/Unit
+  </p>
+  <p class="promotion">
+    {{ product.promotion }}
+  </p>
+  <a class="details">View Details</a>
+
+</div>

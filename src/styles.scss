@@ -1,1 +1,31 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'assets/styles/reset-styles.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+$blue: #3061a3;
+$change-quantity-size: 2rem;
+
+.main {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 auto;
+}
+
+.btn {
+  background-color: white;
+  border: 1px solid $blue;
+  box-shadow: 0 1px 0 0 #bbb;
+  color: $blue;
+
+  &.change-quantity {
+    border-radius: 1rem;
+    height: $change-quantity-size;
+    flex: 0 0 $change-quantity-size;
+  }
+
+  &.submit {
+    border-radius: 0.5rem;
+    flex-grow: 1;
+  }
+}

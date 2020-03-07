@@ -1,0 +1,12 @@
+<main class="main">
+  <h1 class="title">ANHEUSER-BUSCH INBEV: CODE CHALLENGE</h1>
+
+  <div class="products-container">
+    <ng-container *ngFor="let product of products">
+      <app-product-card
+        [product]="product"
+        (sortChange)="changePosition($event)">
+      </app-product-card>
+    </ng-container>
+  </div>
+</main>

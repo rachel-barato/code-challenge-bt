@@ -1,0 +1,22 @@
+.actions {
+  margin: -5px;
+
+  &,
+  .quantity-container,
+  .submit-container {
+    display: flex;
+  }
+
+  .quantity-container,
+  .submit-container {
+    flex-basis: 0;
+    flex-grow: 1;
+    justify-content: space-between;
+    padding: 5px;
+  }
+
+  .btn-input {
+    width: calc(100% - 5rem);
+    min-width: 2rem;
+  }
+}
